@@ -10,6 +10,7 @@ namespace Acr.UserDialogs
         public static void Init(Func<Activity> topActivityFactory)
         {
             Instance = new UserDialogsImpl(topActivityFactory);
+            //throw new ArgumentException("[Acr.UserDialogs] In android, you must call UserDialogs.Init(Activity) from your first activity OR UserDialogs.Init(App) from your custom application OR provide a factory function to get the current top activity via UserDialogs.Init(() => supply top activity)");
         }
 
 
@@ -30,20 +31,6 @@ namespace Acr.UserDialogs
         {
             ActivityLifecycleCallbacks.Register(activity);
             Init(() => ActivityLifecycleCallbacks.CurrentTopActivity);
-        }
-
-
-        static IUserDialogs currentInstance;
-        public static IUserDialogs Instance
-        {
-            get
-            {
-                if (currentInstance == null)
-                    throw new ArgumentException("[Acr.UserDialogs] In android, you must call UserDialogs.Init(Activity) from your first activity OR UserDialogs.Init(App) from your custom application OR provide a factory function to get the current top activity via UserDialogs.Init(() => supply top activity)");
-
-                return currentInstance;
-            }
-            set => currentInstance = value;
         }
     }
 }

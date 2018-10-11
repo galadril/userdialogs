@@ -135,6 +135,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.1.9</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Acr.UserDialogs\Acr.UserDialogs.csproj">
       <Project>{ad34aa53-f275-4f18-a51c-9809c4e1f3bc}</Project>
       <Name>Acr.UserDialogs</Name>
@@ -143,14 +148,6 @@
       <Project>{74cee6c1-4ce8-4279-82af-d5a5ddd76d18}</Project>
       <Name>Samples</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.5</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms">
-      <Version>2.5.0.280555</Version>
-    </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

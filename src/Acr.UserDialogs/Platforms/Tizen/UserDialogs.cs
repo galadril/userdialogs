@@ -16,17 +16,17 @@ namespace Acr.UserDialogs
         }
 
 
-        static IUserDialogs currentInstance;
-        public static IUserDialogs Instance
-        {
-            get
-            {
-                if (currentInstance == null)
-                    throw new ArgumentException("[Acr.UserDialogs] In Tizen, the window instance of your custom application must be passed by using UserDialogs.Init(Window).");
+        //static IUserDialogs currentInstance;
+        //public static IUserDialogs Instance
+        //{
+        //    get
+        //    {
+        //        if (currentInstance == null)
+        //            throw new ArgumentException("[Acr.UserDialogs] In Tizen, the window instance of your custom application must be passed by using UserDialogs.Init(Window).");
 
-                return currentInstance;
-            }
-            set => currentInstance = value;
-        }
+        //        return currentInstance;
+        //    }
+        //    set => currentInstance = value;
+        //}
     }
 }

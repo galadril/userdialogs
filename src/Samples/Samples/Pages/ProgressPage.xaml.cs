@@ -10,7 +10,7 @@ namespace Samples
     {
         public ProgressPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             // the idea here is that you would dependency inject userdialogs
             this.BindingContext = new ProgressViewModel(UserDialogs.Instance);
