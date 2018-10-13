@@ -5,7 +5,9 @@ Supports Android, iOS, and Unified Windows Platform (UWP, UAP)
 
 [![NuGet](https://img.shields.io/nuget/v/Acr.UserDialogs.svg?maxAge=2592000)](https://www.nuget.org/packages/Acr.UserDialogs/)
 
-[Change Log - January 19, 2017](docs/changelog.md)
+[Change Log - January 19, 2018](docs/changelog.md)
+
+### [SUPPORT THIS PROJECT](https://github.com/aritchie/home)
 
 ### Features
 
@@ -26,11 +28,12 @@ _Docs are a work in progress (looking for help!)
 
 
 ## Support Platforms
-
-* iOS 8+
-* Android
-* Universal Windows Platform (Win10/UWP)
-* NET Standard 2.0
+|Platform|Version|
+|--------|-------|
+iOS|8+
+Android|3+ ?
+Windows UWP|16299+
+NET Standard|2.0
 
 
 ## Setup
