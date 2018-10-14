@@ -4,6 +4,7 @@ A cross platform library that allows you to call for standard user dialogs from 
 Supports Android, iOS, and Unified Windows Platform (UWP, UAP)
 
 [![NuGet](https://img.shields.io/nuget/v/Acr.UserDialogs.svg?maxAge=2592000)](https://www.nuget.org/packages/Acr.UserDialogs/)
+[![Build status](https://allanritchie.visualstudio.com/Plugins/_apis/build/status/UserDialogs)](https://allanritchie.visualstudio.com/Plugins/_build/latest?definitionId=8)
 
 [Change Log - January 19, 2018](docs/changelog.md)
 
